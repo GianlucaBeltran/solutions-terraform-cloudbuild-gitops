@@ -14,8 +14,6 @@
 
 
 steps:
-options:
-  logging: CLOUD_LOGGING_ONLY
 - id: 'branch name'
   name: 'alpine'
   entrypoint: 'sh'  
@@ -92,3 +90,5 @@ options:
         echo "*******************************************************************************"
       fi
 # [END tf-apply]      
+options:
+  logging: CLOUD_LOGGING_ONLY
